@@ -57,3 +57,7 @@ refer/*
 *:Zone.Identifier
 package-lock.json
 frontend/package-lock.json
+
+# Temporary ignore for final stage files
+README.md
+demo.mp4
