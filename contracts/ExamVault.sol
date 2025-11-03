@@ -62,7 +62,7 @@ contract ExamVault is SepoliaConfig {
         FHE.allow(answer, address(this));
         
         // Create submission
-        uint256 submissionId = ++submissionCount;
+        uint256 submissionId = submissionCount++;
         
         submissions[submissionId] = Submission({
             student: msg.sender,
