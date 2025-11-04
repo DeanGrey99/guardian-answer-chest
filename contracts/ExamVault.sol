@@ -128,7 +128,7 @@ contract ExamVault is SepoliaConfig {
         Submission memory sub = submissions[_submissionId];
         require(sub.exists, "Submission does not exist");
         require(
-            sub.student != msg.sender,
+            sub.student == msg.sender,
             "Only the student can view their answer"
         );
         
