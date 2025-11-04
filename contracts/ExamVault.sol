@@ -61,6 +61,9 @@ contract ExamVault is SepoliaConfig {
         // Allow the contract to use this encrypted value
         FHE.allow(answer, address(this));
         
+        // Allow the student to decrypt their own answer
+        FHE.allow(answer, msg.sender);
+        
         // Create submission
         uint256 submissionId = submissionCount++;
         
