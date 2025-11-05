@@ -14,6 +14,7 @@ import { useAccount } from "wagmi";
 export const SubmissionHistory = () => {
   const [decryptedAnswers, setDecryptedAnswers] = useState<Record<number, string>>({});
   const [decryptingId, setDecryptingId] = useState<number | null>(null);
+  const [showAllDecrypted, setShowAllDecrypted] = useState(false);
 
   const { isConnected } = useAccount();
   const {
