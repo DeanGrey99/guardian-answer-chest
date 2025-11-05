@@ -23,6 +23,7 @@ export type SubmissionType = {
   examTitle: string;
   timestamp: bigint;
   exists: boolean;
+  error?: string;
 };
 
 export type DecryptedSubmissionType = {
