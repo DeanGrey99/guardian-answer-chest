@@ -35,7 +35,9 @@ describe("ExamVault", function () {
       this.skip();
     }
 
-    ({ examVaultContract, examVaultContractAddress } = await deployFixture());
+    const { examVaultContract: contract, examVaultContractAddress: address } = await deployFixture();
+    examVaultContract = contract;
+    examVaultContractAddress = address;
   });
 
   it("should deploy successfully", async function () {
