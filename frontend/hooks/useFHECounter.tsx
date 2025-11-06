@@ -28,7 +28,8 @@ import { FHECounterABI } from "@/abi/FHECounterABI";
 
 export type ClearValueType = {
   handle: string;
-  clear: string | bigint | boolean;
+  value: number;
+  error?: string;
 };
 type FHECounterInfoType = {
   abi: typeof FHECounterABI.abi;
