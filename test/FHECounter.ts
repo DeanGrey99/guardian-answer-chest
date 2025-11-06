@@ -35,7 +35,9 @@ describe("FHECounter", function () {
       this.skip();
     }
 
-    ({ fheCounterContract, fheCounterContractAddress } = await deployFixture());
+    const { fheCounterContract: contract, fheCounterContractAddress: address } = await deployFixture();
+    fheCounterContract = contract;
+    fheCounterContractAddress = address;
   });
 
   it("encrypted count should be uninitialized after deployment", async function () {
