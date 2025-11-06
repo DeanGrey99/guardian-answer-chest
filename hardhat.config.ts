@@ -48,6 +48,11 @@ const maxPriorityFeePerGas = MAX_PRIORITY_FEE_PER_GAS_GWEI
   ? parseUnits(String(MAX_PRIORITY_FEE_PER_GAS_GWEI), "gwei")
   : undefined;
 
+// Additional gas configuration for better transaction management
+const GAS_LIMIT_MULTIPLIER = process.env.GAS_LIMIT_MULTIPLIER 
+  ? parseFloat(process.env.GAS_LIMIT_MULTIPLIER) 
+  : 1.2;
+
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   namedAccounts: {
