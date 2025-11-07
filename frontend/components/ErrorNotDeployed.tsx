@@ -1,4 +1,15 @@
 export function errorNotDeployed(chainId: number | undefined) {
+  const getNetworkName = (chainId: number | undefined) => {
+    switch (chainId) {
+      case 11155111:
+        return "Sepolia Testnet";
+      case 31337:
+        return "Local Hardhat";
+      default:
+        return `Chain ID: ${chainId}`;
+    }
+  };
+
   return (
     <div className="grid w-full gap-4 mx-auto font-semibold bg-none">
       <div className="col-span-full mx-20">
@@ -7,9 +18,8 @@ export function errorNotDeployed(chainId: number | undefined) {
           <span className="font-mono bg-red-500">Error</span>:{" "}
           <span className="font-mono bg-white">FHECounter.sol</span> Contract
           Not Deployed on{" "}
-          <span className="font-mono bg-white">chainId={chainId}</span>{" "}
-          {chainId === 11155111 ? "(Sepolia)" : ""} or Deployment Address
-          Missing.
+          <span className="font-mono bg-white">{getNetworkName(chainId)}</span>{" "}
+          or Deployment Address Missing.
         </p>
         <p className="text-xl leading-relaxed mt-8">
           It appears that the{" "}
