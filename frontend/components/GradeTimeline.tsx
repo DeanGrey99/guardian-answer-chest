@@ -2,9 +2,9 @@ import { CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
 export const GradeTimeline = () => {
   const milestones = [
-    { label: "Exam Submitted", status: "complete", date: "Nov 10, 2025" },
-    { label: "Under Review", status: "active", date: "Nov 12, 2025" },
-    { label: "Grade Released", status: "pending", date: "Nov 15, 2025" },
+    { label: "Exam Submitted", status: "complete", date: "Nov 10, 2025", description: "Your encrypted answer has been submitted" },
+    { label: "Under Review", status: "active", date: "Nov 12, 2025", description: "Instructors are reviewing submissions" },
+    { label: "Grade Released", status: "pending", date: "Nov 15, 2025", description: "Grades will be available for viewing" },
   ];
 
   return (
