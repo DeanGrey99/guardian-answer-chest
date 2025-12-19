@@ -16,7 +16,7 @@ Guardian Answer Chest is a decentralized application that enables students to su
 
 ### 🌐 Live Demo
 
-**Try it now:** [https://guardian-answer-chest.vercel.app/](https://guardian-answer-chest.vercel.app/)
+**Try it now:** [https://guardian-answer-chest.vercel.app/](https://guardian-answer-chest-lovat.vercel.app/)
 
 ## ✨ Key Features
 

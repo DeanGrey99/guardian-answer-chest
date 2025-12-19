@@ -2,14 +2,14 @@
 pragma solidity ^0.8.24;
 
 import {FHE, euint64, externalEuint64} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {LocalConfig} from "./LocalConfig.sol";
 
 /**
  * @title ExamVault
  * @notice A privacy-preserving exam answer submission system using FHE
  * @dev Students submit encrypted answers that can only be decrypted by authorized parties
  */
-contract ExamVault is SepoliaConfig {
+contract ExamVault is LocalConfig {
     // Struct to store exam submission data
     struct Submission {
         address student;

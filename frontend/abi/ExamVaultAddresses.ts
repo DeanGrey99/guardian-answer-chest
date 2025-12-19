@@ -4,6 +4,6 @@
   Command: 'npm run genabi'
 */
 export const ExamVaultAddresses = { 
-  "11155111": { address: "0x99BF7d78922da63D74f7a287b3a516f10a18530D", chainId: 11155111, chainName: "sepolia" },
+  "11155111": { address: "0x0000000000000000000000000000000000000000", chainId: 11155111, chainName: "sepolia" },
   "31337": { address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512", chainId: 31337, chainName: "hardhat" },
 };
